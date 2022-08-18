@@ -12,6 +12,12 @@ class HomeController extends Controller {
     public function sobre() {
         $this->render('sobre');
     }
+    public function fotos() {
+        $this->render('fotos');
+    }
+    public function foto($parametro) {
+       echo "Acessando a foto: ".$parametro['nome'];
+    }
     public function teste() {
         $this->render('teste');
     }
